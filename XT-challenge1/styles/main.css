@@ -1,0 +1,117 @@
+
+body{
+	background-color: #E8EAF6;
+}
+
+/**mobile**/
+h1 {
+	justify-content: center;
+	display: flex;
+	font-family: 'Roboto', sans-serif;
+	padding: 5%;
+}
+
+.tijdlijn {
+	display: flex;
+	flex-flow: column;
+	
+	font-family: 'Roboto', sans-serif;
+}
+
+.snippet {
+	padding: 5%;
+	padding-top: 10%;
+}
+
+.tekst {
+	max-width: 280px;
+}
+
+
+/**Tablet**/
+@media only screen and (min-width: 1024px) and (max-width: 2047px) {
+	.tijdlijn {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+	}
+
+	.snippet {
+		flex-grow: 1;
+		
+		width: 50%;
+	}
+
+	.tekst {
+	max-width: 280px;
+}
+
+}
+
+
+/**Kleine desktop**/
+@media only screen and (min-width: 2048px) and (max-width: 2559px) {
+	.tijdlijn {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		width: 65%;
+		justify-content: center;
+		margin: auto;
+		
+	}
+
+	.snippet {
+		flex-grow: 1;
+		justify-content: center;
+		width: 50%;
+
+	}
+
+	.tekst {
+		width: 25%;
+	}
+
+	img {
+		height: 300px;
+	}
+}
+
+/**Grote desktop**/
+@media only screen and (min-width: 2559px) {
+	body {
+		background-color: white;
+	}
+
+	.tijdlijn {
+		display: flex;
+		flex-flow: row;
+		flex-wrap: wrap;
+		width: 50%;
+		justify-content: center;
+		margin: auto;
+		
+		padding-left: 10%;
+		padding-right: 10%;
+		background-color: #E8EAF6;
+	}
+
+	.snippet {
+		flex-grow: 1;
+		justify-content: center;
+		width: 50%;
+
+	}
+
+	
+
+	.tekst {
+		width: 25%;
+	}
+
+	img {
+		height: 300px;
+	}
+
+
+}
